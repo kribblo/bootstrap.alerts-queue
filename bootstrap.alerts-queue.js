@@ -1,7 +1,9 @@
 /**
  * @fileOverview Queue Bootstrap alerts with Javascript
  *               <p>License MIT
- *               <br>Copyright 2014 Kristoffer Lundén</p>
+ *               <br>Copyright 2014 Kristoffer Lundén
+ *               <br>GitHub: https://github.com/kribblo/bootstrap.alerts-queue
+ *               </p>
  * @version 1.0
  * @author Kristoffer Lundén
  * @requires jQuery
