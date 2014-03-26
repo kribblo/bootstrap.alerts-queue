@@ -28,14 +28,16 @@ All methods except `clearAlerts` takes an optional options object:
 
 The defaults are:
 
-	var defaultOptions = {
-		type: 'alert-info',
-		holderTop: '10px',
-		distance: '10px',
-		width: 'natural',
-		timeout: undefined,
-		closeButtonText: '&times;'
-	};
+```javascript
+var defaultOptions = {
+	type: 'alert-info',
+	holderTop: '10px',
+	distance: '10px',
+	width: 'natural',
+	timeout: undefined,
+	closeButtonText: '&times;'
+};
+```
 
 #### Basic usage:
 
@@ -63,10 +65,12 @@ $('#warnings').clearAlerts();
 
 Calls `addAlert` with the proper type already set.
 
-`$(...).addWarningAlert(...`
-`$(...).addSuccessAlert(...`
-`$(...).addInfoAlert(...`
-`$(...).addDangerAlert(...`
+```javascript
+$(...).addWarningAlert(...)
+$(...).addSuccessAlert(...)
+$(...).addInfoAlert(...)
+$(...).addDangerAlert(...)
+```
 
 ### Jsdoc
 
