@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Bootstrap Alerts Queue Examples</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<style>
+		.flash {
+			animation: flash 1s ease-out;
+			animation-iteration-count: 1;
+			-webkit-animation: flash 1s ease-out;
+			-webkit-animation-iteration-count: 1;
+		}
+
+		@-webkit-keyframes flash {
+			0% {
+				background-color: #fff;
+			}
+			50% {
+				background-color: #fbf8b2;
+			}
+			100% {
+				background-color: #fff;
+			}
+		}
+
+		@keyframes flash {
+			0% {
+				background-color: #fff;
+			}
+			50% {
+				background-color: #fbf8b2;
+			}
+			100% {
+				background-color: #fff;
+			}
+		}
+
+		#examples-js {
+			width: 100%;
+			height: 300px;
+			border: 0 none transparent;
+		}
+
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Bootstrap Alerts Queue Examples</h1>
+
+	<p>
+		Try queueing up a few alerts, with and without a timeout.
+		Alerts will appear inside the <a id="flasher" href="javascript:">.panel-body element</a>.
+		Changing the width clears the alerts.
+	</p>
+
+	<p>Or simply mash the Random buttons. :)</p>
+
+	<form id="main-form" class="form-inline" role="form" style="margin: 20px 0;">
+		<div class="form-group">
+			<label for="text">Text:</label>
+			<input type="text" class="form-control" id="text" placeholder="Alert what?">
+		</div>
+		<div class="form-group">
+			<label for="timeout">Timeout:</label>
+			<input type="number" class="form-control" id="timeout" placeholder="Milliseconds or empty" step="1000">
+		</div>
+		<div class="form-group">
+			<label for="type">Type:</label>
+			<select id="type" class="form-control">
+				<option value="alert-info">info</option>
+				<option value="alert-success">success</option>
+				<option value="alert-warning">warning</option>
+				<option value="alert-danger">danger</option>
+			</select>
+		</div>
+		<div class="form-group pull-right">
+			<label for="width">Width:</label>
+			<select id="width" class="form-control">
+				<option>natural</option>
+				<option>uniform</option>
+				<option>300px</option>
+			</select>
+		</div>
+	</form>
+
+	<div class="form-group">
+		<button id="go" class="btn btn-primary" type="button"><span class="glyphicon glyphicon-ok"></span> Alert</button>
+		<button id="random" class="btn btn-primary" type="button"><span class="glyphicon glyphicon-random"></span> Random</button>
+		<button id="random-timeout" class="btn btn-primary" type="button">
+			<span class="glyphicon glyphicon-random"></span> Random +
+			<span class="glyphicon glyphicon-time"></span> Timeout
+		</button>
+		<button id="clear" class="btn btn-primary" type="button"><span class="glyphicon glyphicon-remove"></span> Clear</button>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h2 class="panel-title">Lorem ipsum. Dolor sit amet!</h2>
+		</div>
+		<div id="main-holder" class="panel-body">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet urna feugiat libero dictum interdum. Donec et sagittis velit. Vivamus
+				congue, nisi in euismod porta, ligula lectus viverra risus, sed consectetur odio velit sed odio. Ut pulvinar fermentum diam sed tincidunt. Cras
+				quis vehicula arcu. Duis sodales, turpis a faucibus ultricies, lectus massa lobortis leo, volutpat cursus nulla eros accumsan urna. Nam ut felis
+				sit amet metus tempor gravida. Ut massa neque, laoreet eu imperdiet ut, rhoncus sit amet est. Aenean at vehicula dui. Morbi tincidunt vitae elit
+				vel venenatis. Quisque ut tortor in arcu blandit mattis. Aliquam aliquet posuere varius. Sed eget ipsum vel dui sodales scelerisque sed nec
+				nisl. Maecenas magna diam, vestibulum pellentesque dolor et, rutrum gravida erat.
+			</p>
+
+			<p>
+				Pellentesque dignissim, enim quis molestie aliquam, augue libero volutpat urna, sed bibendum nibh lacus ut lorem. Morbi porta mollis tortor,
+				quis suscipit lectus convallis ut. Aliquam aliquet lacus tincidunt mi placerat, eu laoreet risus rutrum. Vestibulum id ligula at dui mollis
+				vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt, lacus vitae tempus fermentum, lacus lectus hendrerit
+				tellus, at viverra tortor ante eu quam. Vestibulum in laoreet urna. In hac habitasse platea dictumst. Suspendisse potenti. Maecenas blandit
+				purus a metus consequat, at convallis dolor mollis. Quisque cursus mi sem, at placerat odio cursus rhoncus. Nullam tortor nulla, commodo nec
+				metus id, bibendum gravida dui. Mauris rhoncus mollis risus ac molestie
+			</p>
+
+			<p>
+				Suspendisse mollis et lectus vel placerat. Ut dignissim tortor sit amet ante viverra, et lobortis nulla rutrum. Pellentesque lectus diam, cursus
+				ac mollis quis, laoreet facilisis purus. Fusce dictum dui odio, eu luctus turpis lacinia vitae. Cras turpis nisi, viverra id lorem a, adipiscing
+				ultricies felis. Donec fringilla libero at nisl condimentum, eu euismod dui pharetra. Proin dignissim volutpat est eget luctus. Nam ac mauris a
+				nulla iaculis cursus. Suspendisse potenti. Donec a consequat metus, ac ultricies turpis. Integer id mi eu urna viverra facilisis. Morbi massa
+				tortor, tincidunt et venenatis et, consectetur nec ipsum. Vivamus condimentum velit ac nunc iaculis, vel suscipit neque adipiscing. Lorem ipsum
+				dolor sit amet, consectetur adipiscing elit. Sed nec magna sit amet dui posuere lacinia eu eget diam. Nam eros eros, pellentesque vel malesuada
+				et, bibendum ac nulla.
+			</p>
+
+			<p>
+				Aliquam id rutrum quam. Phasellus scelerisque elementum nibh. Ut in tortor libero. Nam fermentum massa eget sem scelerisque, ac varius nisi
+				tempus. Morbi condimentum ligula vel mauris tempor, venenatis vestibulum elit adipiscing. In a tempor justo, ac laoreet mauris. Vestibulum sit
+				amet facilisis ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+			</p>
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h2 class="panel-title">Source of the <a href="examples.js">example code</a></h2>
+		</div>
+		<div class="panel-body">
+			<iframe id="examples-js" src="examples.js"></iframe>
+		</div>
+	</div>
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="../bootstrap.alerts-queue.js"></script>
+<script src="examples.js"></script>
+</body>
+</html>
