@@ -9,7 +9,7 @@ jQuery + Bootstrap (minimum: alerts CSS and alerts-dismissal Javascript)
 
 ### Examples
 
-[Examples page](examples/examples.html) with [Javascript source](examples/examples.js)
+[Examples page](http://kribblo.github.io/bootstrap.alerts-queue/examples/examples.html) with [Javascript source](http://kribblo.github.io/bootstrap.alerts-queue/examples/examples.js)
 
 ### Usage
 
