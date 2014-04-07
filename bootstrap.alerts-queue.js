@@ -193,7 +193,7 @@
 							top: holderTop,
 							left: holderLeft,
 							paddingTop: options.holderTop
-						}).prependTo($parent);
+						}).appendTo($parent);
 				}
 				return $holder;
 			}
