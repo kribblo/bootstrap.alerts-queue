@@ -215,7 +215,7 @@
 
 	function createAlert(text, options) {
 		var $alert = jQuery('<div class="alert fade in"></div>');
-		$alert.text(text);
+		$alert.html(text);
 		var type = options.type;
 		$alert.addClass(type);
 		$alert.css({
